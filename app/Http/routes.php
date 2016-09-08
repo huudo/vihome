@@ -22,4 +22,8 @@ Route::get('/home', 'HomeController@index');
 
 Route::group(array('middleware'=>'auth','prefix'=>'admin'), function(){
     Route::get("/",['uses' => 'AdminController@index']);
+    
+    Route::get("/thietke/{id}",['uses' => 'AdminController@design']);
+    Route::get("/thietke/createNew/{id}",['uses' => 'AdminController@designCreate']);
+    
 });

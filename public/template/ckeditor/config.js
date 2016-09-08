@@ -35,12 +35,12 @@ CKEDITOR.editorConfig = function( config ) {
 
 	// Simplify the dialog windows.
 	config.removeDialogTabs = 'image:advanced;link:advanced';
-	config.filebrowserBrowseUrl = '/trungtam/public/template/kcfinder/browse.php?opener=ckeditor&type=files';
-    config.filebrowserImageBrowseUrl = '/trungtam/public/template/kcfinder/browse.php?opener=ckeditor&type=images';
-    config.filebrowserFlashBrowseUrl = '/trungtam/public/template/kcfinder/browse.php?opener=ckeditor&type=flash';
-    config.filebrowserUploadUrl = '/trungtam/public/template/kcfinder/upload.php?opener=ckeditor&type=files';
-    config.filebrowserImageUploadUrl = '/trungtam/public/template/kcfinder/upload.php?opener=ckeditor&type=images';
-    config.filebrowserFlashUploadUrl = '/trungtam/public/template/kcfinder/upload.php?opener=ckeditor&type=flash';
+	config.filebrowserBrowseUrl = '/vihome/public/template/kcfinder/browse.php?opener=ckeditor&type=files';
+    config.filebrowserImageBrowseUrl = '/vihome/public/template/kcfinder/browse.php?opener=ckeditor&type=images';
+    config.filebrowserFlashBrowseUrl = '/vihome/public/template/kcfinder/browse.php?opener=ckeditor&type=flash';
+    config.filebrowserUploadUrl = '/vihome/public/template/kcfinder/upload.php?opener=ckeditor&type=files';
+    config.filebrowserImageUploadUrl = '/vihome/public/template/kcfinder/upload.php?opener=ckeditor&type=images';
+    config.filebrowserFlashUploadUrl = '/vihome/public/template/kcfinder/upload.php?opener=ckeditor&type=flash';
 };
 /** 
  * @license Copyright (c) 2003-2015, CKSource - Frederico Knabben. All rights reserved. 

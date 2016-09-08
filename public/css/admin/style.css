@@ -1,3 +1,6 @@
+body,h1,h2{
+   font-family: FontAwesome;
+}
 .nav-side-menu {
   overflow: auto;
   font-family: verdana;
@@ -6,7 +9,7 @@
   background-color: #2e353d;
   position: fixed;
   top: 0px;
-  width: 20%;
+  width: 300px;
   height: 100%;
   color: #e1ffff;
 }
@@ -138,96 +141,37 @@
   .nav-side-menu .menu-list .menu-content {
     display: block;
   }
+  #main {
+    width:calc(100% - 300px);
+    float: right;
+  }
 }
+
 body {
   margin: 0px;
   padding: 0px;
 }
-a{
-  text-decoration: none;
-}
-a:hover{
-  text-decoration: none;
-}
-.content{
-  width: 79%;
-  float: right;
-}
-/* =============== CREATE NEWS ======================== */
-.vn_tittle, .eng_tittle{
-  width: 80%;
-}
-.tieng_viet {
-  color: #0482b2;
-}
-.tieng_viet input{
-  margin-bottom: 20px;
-}
 
-.tieng_anh {
-  color: #0482b2;
+.top_content{
+  height: 50px;
+  background: #1c97cc;
 }
-.tieng_anh input{
-  margin-bottom: 20px;
+.top_content h2{
+  color: #fff;
+  font-size: 24px;
+  line-height:10px;
 }
-.btn_create{
-  background: #d63600;
-  color: #ffffff;
-  width: 80px;
-  height: 30px;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
-}
-.btn_create:hover{
-  background: #fd470a;
-  
-}
-.details_news{
-  border-bottom: 1px solid #005365;
-  width: 90%;
-  margin-bottom: 50px;
-}
-table{
-  vertical-align: top;
-  width: 100%;
-  margin-bottom: 30px;
-}
-table h2{
-  font-size: 30px;
-  color: #0888d6;
-}
-a{
+.create_new a{
+  float: right;
+  color: #fff;
+  margin-top:20px;
+  margin-right: 50px;
+  font-size: 20px;
   text-decoration: none;
+  background: #07b8ef;
+  padding: 10px 30px 0px;
+  border-radius: 5px;
 }
-.menu_action a{
-  font-size: 30px;
-}
-.menu_action a:hover, .menu_action a:active{
-  color: #0792e7;
-}
-.details_news table td a{
-  font-size: 20px;
-  padding: 5px 10px;
-}
-.student_details{
-  width: 80%;
-  border-bottom: 1px solid #157cf0;
-  margin-top: 30px;
-}
-.student_details table td a{
-  font-size: 20px;
-  padding: 5px 10px;
-}
-.collapse{
-  display: block !important;
-}
-.btn_accepted{
-  background: #CCC;
-  color: #ffffff;
-  width: 80px;
-  height: 30px;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
+.create_new a:hover, .create_new a:active{
+  background: #58d4fb;
 }
