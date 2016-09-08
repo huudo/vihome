@@ -26,7 +26,7 @@
             </div>
         </div> -->
     </header>
-    <div id="wrapper">
+    <div id="wrapper" style="position: fixed;z-index: 999999;width: 100%;">
         <div id="menu">
             <div id="sub_menu">
                 <nav class="navbar navbar-default" align="left">

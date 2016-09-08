@@ -44,7 +44,7 @@
 	   }(document, 'script', 'facebook-jssdk'));
 	</script>
 	@include('includes.header')
-	<div id="main">
+	<div id="main" style="padding-top: 66px;">
 		 @yield('content')
 	</div>
 	@include('includes.footer')

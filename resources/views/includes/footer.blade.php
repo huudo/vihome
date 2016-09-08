@@ -8,7 +8,7 @@
 						<div class="foo-info">
 								
 							<a href="/">	
-							<img alt="noithatthoinay" src="//bizweb.dktcdn.net/100/022/286/themes/28873/assets/logo.png?1457574486889">
+								<img src="{{Asset('public/images/logo.png')}}">
 							</a>
 							
 							<br>
@@ -82,10 +82,10 @@
 					<span>Liên hệ</span>
 				</div>
 				<div class="foo-info">
-					<p class="foo-address">138 đường Cống Đặng, xã Hữu Bằng, huyện Thạch Thất, Hà Nội</p>
-					<p><span class="foo-phone">0913.009.985</span>
+					<p class="foo-address">Tòa HH1A - Tổ hợp chung cư HH Linh Đàm - Quận Hoàng Mai - Hà Nội</p>
+					<p><span class="foo-phone">096.668.6892 - 091.111.6892</span>
 					</p>
-					<a href="mailto:dogodep99@gmail.com" class="foo-mail">dogodep99@gmail.com</a>
+					<a href="mailto:dogodep99@gmail.com" class="foo-mail">noithatvihome.vn@gmail.com</a>
 
 					<div class="fooFlowus">
 						<ul class="list-unstyled">
