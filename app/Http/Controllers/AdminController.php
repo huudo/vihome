@@ -44,8 +44,26 @@ class AdminController extends Controller
         return view('admin.design',$data);
     }
 
-    public function officeCreate(){
-        
+    public function designCreate($id){
+        $data['url'] = $id;
+        switch ($id) {
+            case 'office':
+                $data['tittle'] = "Nội thất văn phòng";
+                break;
+            case 'living':
+                $data['tittle'] = "Nội thất phòng khách";
+                break;
+            case 'bedroom':
+                $data['tittle'] = "Nội thất phòng ngủ";
+                break;
+            case 'eating':
+                $data['tittle'] = "Nội thất phòng ăn";
+                break;    
+            default:
+                # code...
+                break;
+        }
+        return view('admin.designCreate',$data);
     }
     
 }

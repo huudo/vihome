@@ -10,7 +10,7 @@
                 <h2>Danh sách dự án</h2>
             </div>
             <div class="col-md-6 create_new">
-                <a href="{{URL::to('admin/thietke')}}/{{$url}}/createNew"><p><i class="fa fa-plus-square" aria-hidden="true"></i> Tạo mới</p></a>
+                <a href="{{URL::to('admin/thietke/createNew')}}/{{$url}}"><p><i class="fa fa-plus-square" aria-hidden="true"></i> Tạo mới</p></a>
             </div>            
         </div>
     </div>
