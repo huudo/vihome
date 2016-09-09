@@ -26,5 +26,14 @@ Route::group(array('middleware'=>'auth','prefix'=>'admin'), function(){
     Route::get("/thietke/{id}",['uses' => 'AdminController@design']);
     Route::get("/thietke/createNew/{id}",['uses' => 'AdminController@designCreate']);
     
+    Route::post('/upload', function() { 
+        $file = Input::file('file');
+        $extension = File::extension($file->getClientOriginalName());
+        $directory = 'img/profile_pics/'. Auth::user()->username;
+        $filename =  "profile.".$extension;
+
+        $upload_success = Input::file('file')->move($directory, $filename); 
+   
+    });
     
 });

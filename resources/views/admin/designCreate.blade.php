@@ -1,30 +1,15 @@
 @extends('admin.default')
+<link rel="stylesheet" type="text/css" href="{{Asset('public/css/dropzone.css')}}">
+<script type="text/javascript" src={{Asset('public/js/dropzone.js')}}></script>
 
 @section('content')
-    <div class="row">
-        <div class="col-md-12 top_content"> 
-            <h2>{{$tittle}}</h2>
-        </div>
-        <div class="col-md-12 detail_content">
-            <div class="col-md-6">
-                <h2>Tạo dự án mới</h2>
-            </div>
-            <div class="col-md-12">
-                <div class="formCreate">
-                    <form action="" method="POST">
-                        <p>Tiêu đề</p>
-                        <input class="projectTittle">
-                        <p>Mô tả</p>
-                        <textarea id="editor1" class="ckeditor" name="vietnam" required></textarea>  
-  
-                        <script type="text/javascript">  
-                            CKEDITOR.replace( 'editor1' );  
-                        </script>  
-                        
-                    </form>
-                </div>
-            </div>           
-        </div>
-    </div>
+{{ Form::open(array('url'=>route('admin.upload'), 'class' => 'dropzone dz-clickable','files'=>true)) }}
+ 
     
+        <div class="dz-message">
+        <h4>Drag Photos to Upload</h4>
+        <span>Or click to browse</span>
+        </div>
+  {!! Form::close() !!}
+ {!! Form::hidden('csrf-token', csrf_token(), ['id' => 'csrf-token']) !!}   
 @stop 
