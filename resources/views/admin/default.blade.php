@@ -10,10 +10,6 @@
     <script type="text/javascript" src={{Asset('public/template/ckeditor/ckeditor.js')}} ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
     <script type="text/javascript" src={{Asset('public/js/bootstrap.min.js')}}></script>
-    
-
-    
-
 </head>
 <body>
 <div class="nav-side-menu">
@@ -35,10 +31,10 @@
                 <a href="#"><i class="fa fa-globe fa-lg"></i> Thiết kế <span class="arrow"></span></a>
             </li>
             <ul class="sub-menu collapse" id="service">
-                <li>Phòng làm việc</li>
-                <li>Phòng khách</li>
-                <li>Phòng ngủ</li>
-                <li>Phòng ăn</li>
+                <li><a href="{{URL::to('admin/thietke/office')}}">Phòng làm việc</a></li>
+                <li><a href="{{URL::to('admin/thietke/living')}}">Phòng khách</a></li>
+                <li><a href="{{URL::to('admin/thietke/bedroom')}}">Phòng ngủ</a></li>
+                <li><a href="{{URL::to('admin/thietke/eating')}}">Phòng ăn</a></li>
             </ul>           
             <li>
                 <a href="#">

@@ -15,13 +15,19 @@
         </div>
     </div>
     <div class="row productList">
+
+        @foreach($projects as $project)
         <div class="product col-md-3">
-                <div class="imgProduct">
-                    <img src="">
-                </div>
                 <div class="detailProduct">
-                    <p>Tiêu đề</p>
+                    <p>{{$project['tittle']}}</p>
                 </div>
+                <div class="imgProduct">
+                    <a href="{{URL::to('admin/thietke/createNew')}}/{{$url}}/{{$project['id']}}">
+                          <img src="{{Asset('public/images/uploads')}}/{{$project['img']}}">
+                    </a>
+                  
+                </div>                
         </div>
+        @endforeach
     </div>
 @stop 

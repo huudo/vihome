@@ -175,3 +175,8 @@ body {
 .create_new a:hover, .create_new a:active{
   background: #58d4fb;
 }
+
+.imgProduct img{
+  width: 100%;
+  height: auto;
+}
