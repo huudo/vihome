@@ -9,7 +9,7 @@
         </div>
     </div>
     <div class="row container_center">
-        <form action="{{URL::to('admin/thietke/createNew/')}}/{{$url}}" method="POST" enctype="multipart/form-data">
+        <form action="{{URL::to('admin/thiet-ke/createNew/')}}/{{$url}}" method="POST" enctype="multipart/form-data">
             <div class="col-md-12">   
                 <p>Tiêu đề</p>
                 <input class="project_tittle" name="tittle">

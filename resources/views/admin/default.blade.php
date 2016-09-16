@@ -31,10 +31,10 @@
                 <a href="#"><i class="fa fa-globe fa-lg"></i> Thiết kế <span class="arrow"></span></a>
             </li>
             <ul class="sub-menu collapse" id="service">
-                <li><a href="{{URL::to('admin/thietke/office')}}">Phòng làm việc</a></li>
-                <li><a href="{{URL::to('admin/thietke/living')}}">Phòng khách</a></li>
-                <li><a href="{{URL::to('admin/thietke/bedroom')}}">Phòng ngủ</a></li>
-                <li><a href="{{URL::to('admin/thietke/eating')}}">Phòng ăn</a></li>
+                <li><a href="{{URL::to('admin/thiet-ke/office')}}">Phòng làm việc</a></li>
+                <li><a href="{{URL::to('admin/thiet-ke/living')}}">Phòng khách</a></li>
+                <li><a href="{{URL::to('admin/thiet-ke/bedroom')}}">Phòng ngủ</a></li>
+                <li><a href="{{URL::to('admin/thiet-ke/eating')}}">Phòng ăn</a></li>
             </ul>           
             <li>
                 <a href="#">
@@ -57,6 +57,7 @@
 <div class="container" id="main">
     <div class="row">
         <div class="col-md-12">
+           
            @yield('content')
         </div>
     </div>

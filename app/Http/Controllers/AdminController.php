@@ -141,11 +141,11 @@ class AdminController extends Controller
                $img->id_project  = $id_project;
                $img->save();
             }
-            return Redirect::to('admin/thietke/'.$id);
+            return Redirect::to('admin/thiet-ke/'.$id);
         } 
         else{
             Session::flash('error', "Upload không thành công! Kiểm tra lại");   
-            return Redirect::to('admin/thietke/createNew/'.$id);
+            return Redirect::to('admin/thiet-ke/createNew/'.$id);
         }       
         
     }
@@ -180,4 +180,7 @@ class AdminController extends Controller
         return view('admin.detailProject',$data);
     }
     
+    public function suicide($id){
+
+    }
 }

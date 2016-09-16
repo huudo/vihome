@@ -17,7 +17,7 @@ class Project extends Model {
     }
 
     public static function getProjectDetail($id){
-        $result =  Project::where('id',$id)->get();
+        $result =  Project::where('id',$id)->first();
         return $result;        
     }
 }

@@ -10,7 +10,7 @@
                 <h2>Danh sách dự án</h2>
             </div>
             <div class="col-md-6 create_new">
-                <a href="{{URL::to('admin/thietke/createNew')}}/{{$url}}"><p><i class="fa fa-plus-square" aria-hidden="true"></i> Tạo mới</p></a>
+                <a href="{{URL::to('admin/thiet-ke/createNew')}}/{{$url}}"><p><i class="fa fa-plus-square" aria-hidden="true"></i> Tạo mới</p></a>
             </div>            
         </div>
     </div>
@@ -22,7 +22,7 @@
                     <p>{{$project['tittle']}}</p>
                 </div>
                 <div class="imgProduct">
-                    <a href="{{URL::to('admin/thietke/createNew')}}/{{$url}}/{{$project['id']}}">
+                    <a href="{{URL::to('admin/thiet-ke/createNew')}}/{{$url}}/{{$project['id']}}">
                           <img src="{{Asset('public/images/uploads')}}/{{$project['img']}}">
                     </a>
                   
