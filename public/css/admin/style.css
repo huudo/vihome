@@ -1,5 +1,10 @@
 body,h1,h2{
    font-family: FontAwesome;
+   margin: 0px;
+   padding: 0px;
+}
+a:hover {
+  text-decoration: none;
 }
 .nav-side-menu {
   overflow: auto;
@@ -159,7 +164,7 @@ body {
 .top_content h2{
   color: #fff;
   font-size: 24px;
-  line-height:10px;
+  line-height:47px;
 }
 .create_new a{
   float: right;
@@ -178,5 +183,15 @@ body {
 
 .imgProduct img{
   width: 100%;
-  height: auto;
+  height: 200px;
+  position: relative;
+}
+
+.productList{
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 2px solid #CCC;
+}
+.detailProduct p{
+  font-size: 16px;
 }

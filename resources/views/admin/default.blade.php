@@ -37,20 +37,24 @@
                 <li><a href="{{URL::to('admin/thiet-ke/eating')}}">Phòng ăn</a></li>
             </ul>           
             <li>
-                <a href="#">
+                <a href="{{URL::to('admin/thiet-ke/du-an')}}">
                     <i class="fa fa-user fa-lg"></i> Dự án
                 </a>
             </li>
-           <li data-toggle="collapse" data-target="#tu_van" class="collapsed">
+            <li data-toggle="collapse" data-target="#tu_van" class="collapsed">
                 <a href="#"><i class="fa fa-globe fa-lg"></i> Tư vấn <span class="arrow"></span></a>
             </li>
             <ul class="sub-menu collapse" id="tu_van">
-                <li>Tư vấn A</li>
-                <li>Tư vấn A</li>
-                <li>Tư vấn A</li>
-                <li>Tư vấn A</li>
-
-            </ul>           
+                <li><a href="{{URL::to('admin/tu-van/noi-that')}}">Tư vấn nội thất</a></li>
+                <li><a href="{{URL::to('admin/tu-van/kien-truc')}}">Tư vấn kiến trúc</a></li>
+                <li><a href="{{URL::to('admin/tu-van/xay-dung')}}">Tư vấn xây dựng</a></li>
+                <li><a href="{{URL::to('admin/tu-van/noi-that')}}">Tư vấn phong thủy</a></li>
+            </ul>
+            <li>
+                <a href="{{URL::to('admin/tin-tuc')}}">
+                    <i class="fa fa-user fa-lg"></i>Tin tức
+                </a>
+            </li>           
         </ul>
     </div>
 </div>

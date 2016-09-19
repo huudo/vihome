@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\Redirect;
 
 use App\Project;
 use App\ProjectImg;
+use App\News;
+use App\Suicide;
 
 class AdminController extends Controller
 {
@@ -51,6 +53,7 @@ class AdminController extends Controller
                 break;    
             default:
                 # code...
+                $data['tittle'] = "Dự án";
                 $design_id = 0;
                 break;
         }
@@ -75,6 +78,7 @@ class AdminController extends Controller
                 break;    
             default:
                 # code...
+                $data['tittle'] = "Dự án";
                 break;
         }
         return view('admin.designCreate',$data);
@@ -102,6 +106,7 @@ class AdminController extends Controller
                 break;    
             default:
                 # code...
+                $data['tittle'] = "Dự án";
                 $design_id = 0;
                 break;
         }
@@ -171,6 +176,7 @@ class AdminController extends Controller
                 break;    
             default:
                 # code...
+                $data['tittle'] = "Dự án";
                 $design_id = 0;
                 break;
         }
@@ -179,8 +185,101 @@ class AdminController extends Controller
         $data['countImg'] = sizeof($data['img']);   
         return view('admin.detailProject',$data);
     }
-    
+    // Suicide Controller
     public function suicide($id){
-
+        switch ($id) {
+            case 'noi-that':
+                $data['tittle'] = "Tư vấn nội thất";
+                break;
+            case 'kien-truc':
+                $data['tittle'] = "Tư vấn kiến trúc";
+                break;
+            case 'xay-dung':
+                $data['tittle'] = "Tư vấn xây dựng";
+                break;
+            case 'phong-thuy':
+                $data['tittle'] = "Tư vấn phong thủy";
+                break;    
+            default:
+                break;
+        }
+        $data['url'] = $id;
+        $data['suicides'] = Suicide::getSuicide($id);
+        return view('admin.suicide',$data); 
     }
+    public function suicideCreate($id){
+        switch ($id) {
+            case 'noi-that':
+                $data['tittle'] = "Tư vấn nội thất";
+                break;
+            case 'kien-truc':
+                $data['tittle'] = "Tư vấn kiến trúc";
+                break;
+            case 'xay-dung':
+                $data['tittle'] = "Tư vấn xây dựng";
+                break;
+            case 'phong-thuy':
+                $data['tittle'] = "Tư vấn phong thủy";
+                break;    
+            default:
+                break;
+        }
+        $data['url'] = $id;
+        return view('admin.suicideCreate',$data);
+    }
+    public function post_suicideCreate($id){
+        $file = Input::file('images');
+        $input = Input::all();
+        $img_url = '';
+        $rules = array('file' => 'required'); //'required|mimes:png,gif,jpeg,txt,pdf,doc'
+        $validator = Validator::make(array('file'=> $file), $rules);
+        if($validator->passes()){
+            $destinationPath = public_path().'/images/uploads/suicide';
+            $filename = $file->getClientOriginalName();
+            $img_url = $filename;
+            $upload_success = $file->move($destinationPath, $filename);
+            $suicide = new Suicide;
+            $suicide->tittle = $input['tittle'];
+            $suicide->content = $input['content'];
+            $suicide->img = $img_url;
+            $suicide->type = $id;
+            $suicide->save();
+            return Redirect::to('admin/tu-van/'.$id);
+        }else{
+            Session::flash('error', "Upload không thành công! Kiểm tra lại");   
+            return Redirect::to('admin/tu-van/tao-moi/'.$id);
+        }      
+    }
+    //News controller
+    public function news(){
+        $data['news'] = News::getNews();
+        return view('admin.news',$data);
+    }
+
+    public function createNews(){
+        return view('admin.createNews');
+    }
+    public function post_createNews(){
+        $file = Input::file('images');
+        $input = Input::all();
+        $img_url = '';
+        $rules = array('file' => 'required'); //'required|mimes:png,gif,jpeg,txt,pdf,doc'
+        $validator = Validator::make(array('file'=> $file), $rules);
+        if($validator->passes()){
+            $destinationPath = public_path().'/images/uploads/news';
+            $filename = $file->getClientOriginalName();
+            $img_url = $filename;
+            $upload_success = $file->move($destinationPath, $filename);
+            $new = new News;
+            $new->tittle = $input['tittle'];
+            $new->content = $input['content'];
+            $new->img = $img_url;
+            $new->save();
+            return Redirect::to('admin/tin-tuc');
+        }else{
+            Session::flash('error', "Upload không thành công! Kiểm tra lại");   
+            return Redirect::to('admin/tin-tuc/tao-moi');
+        }      
+    }    
+
 }
