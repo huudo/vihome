@@ -45,9 +45,9 @@
 	</script>
 	@include('includes.header')
 	<div id="main" style="padding-top: 66px;" class="container">		
-		<div class="row bg_background">
+		
 		  @yield('content')			
-		</div>	
+			
 	</div>
 	@include('includes.footer')
 </body>

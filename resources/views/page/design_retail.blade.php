@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href={{Asset('public/css/slide/slicebox.css')}}>
     <link rel="stylesheet" type="text/css" href={{Asset('public/css/slide/custom.css')}}>
     <script type="text/javascript" src={{Asset('public/js/slide/modernizr.custom.46884.js')}}></script>
+    <div class="row bg_background">
     <div class="content_center">
         <div class="top_center">
             <h2>{{$project['tittle']}}</h2>
@@ -90,4 +91,5 @@
             });
         </script>
     </div>
+</div>
 @stop

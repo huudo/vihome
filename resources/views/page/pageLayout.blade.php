@@ -1,7 +1,7 @@
 @extends('layouts.default')
 @section('content')
     <div class="container">
-        <div class="row bg_background">
+        <div class="row">
             <div class="col-md-3 hidden-sm hidden-md hidden-xs">
                 <div class="navbar_left">
                     <div class="navbar navbar-fixed-left">
