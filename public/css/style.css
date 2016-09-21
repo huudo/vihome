@@ -19,7 +19,7 @@
 **********************/
 
 body {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
     font-size: 13px;
     color: #333;
     background-color: #fff;

@@ -55,7 +55,8 @@
 
                             },
                             orientation : 'r',
-                            cuboidsRandom : true
+                            cuboidsRandom : true,
+                            disperseFactor : 30
                         } ),
                         
                         init = function() {
