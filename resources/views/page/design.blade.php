@@ -8,11 +8,11 @@
         <div class="row list_project">
             <div class="col-md-6">  
                 <div class="tittle_project">
-                    <a href="{{URL::to('du-an')}}/{{$item['id']}}"><p>{{$item['tittle']}}</p></a>
+                    <a href="{{URL::to('thiet-ke/')}}/{{$name}}/{{$item['id']}}"><p>{{$item['tittle']}}</p></a>
                     
                 </div>
                 <div class="img_project">
-                    <a href="{{URL::to('du-an')}}/{{$item['id']}}"><img src="{{Asset('public/images/uploads')}}/{{$item['img']}}"></a>
+                    <a href="{{URL::to('thiet-ke/')}}/{{$name}}/{{$item['id']}}"><img src="{{Asset('public/images/uploads')}}/{{$item['img']}}"></a>
                 </div>
             </div>
             <div class="col-md-6">

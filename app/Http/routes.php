@@ -19,10 +19,12 @@ Route::post('auth/login', 'Auth\AuthController@postLogin');
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
 
 Route::get('/home', 'HomeController@index');
+
 Route::get('/du-an/',['uses' => 'HomeController@project']);
 Route::get('/du-an/{id}',['uses' => 'HomeController@project_retail']);
 
-
+Route::get('/thiet-ke/{name}',['uses' => 'HomeController@design']);
+Route::get('/thiet-ke/{name}/{id}',['uses' => 'HomeController@design_retail']);
 
 //Route Admin
 Route::group(array('middleware'=>'auth','prefix'=>'admin'), function(){

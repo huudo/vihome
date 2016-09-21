@@ -8,7 +8,8 @@ class Project extends Model {
     protected $table = 'project';
 
     public static function getProject($id){
-        $result = Project::where('design_id',$id)->get();
+        $result = Project::where('design_id',$id)->paginate(5);
+        $result->setPath('');
         return $result;
     }
     public static function getLastId(){
