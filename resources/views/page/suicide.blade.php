@@ -4,18 +4,18 @@
         <div class="top_center">
             <h2>{{$tittle}}</h2>
         </div>
-        @foreach($project as $item)
+        @foreach($suicides as $item)
         <div class="row list_project">
             <div class="col-md-6">  
                 <div class="tittle_project">
-                    <a href="{{URL::to('thiet-ke/')}}/{{$name}}/{{$item['id']}}"><p>{{$item['tittle']}}</p></a>
+                    <a href="{{URL::to('tu-van')}}/{{$url}}/{{$item['id']}}"><p>{{$item['tittle']}}</p></a>
                     
                 </div>
                 <div class="img_project">
-                    <a href="{{URL::to('thiet-ke/')}}/{{$name}}/{{$item['id']}}"><img src="{{Asset('public/images/uploads')}}/{{$item['img']}}"></a>
+                    <a href="{{URL::to('tu-van')}}/{{$url}}/{{$item['id']}}"><img src="{{Asset('public/images/uploads/suicide')}}/{{$item['img']}}"></a>
                 </div>
             </div>
-            <div class="col-md-6 retail_text">
+            <div class="col-md-6">
                 <?php
                   echo str_limit($item['content'], $limit = 500, $end = '...');
                 ?>
@@ -24,7 +24,7 @@
         @endforeach
         <div class="pagination">
             <?php
-                echo $project->render();
+                echo $suicides->render();
             ?>
         </div>
     </div>

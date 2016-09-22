@@ -15,7 +15,7 @@
                     <a href="{{URL::to('du-an')}}/{{$item['id']}}"><img src="{{Asset('public/images/uploads')}}/{{$item['img']}}"></a>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 retail_text">
                 <?php
                   echo str_limit($item['content'], $limit = 500, $end = '...');
                 ?>

@@ -53,42 +53,43 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-left ">  
                             <li class="hidden-sm hidden-md hidden-xs img_logo" >
-                                <a href="URL::to('/')">
+                                <a href="{{URL::to('/')}}">
                                     <img src="{{Asset('public/images/logo.png')}}" style="width:150px;height:40px;margim-top:-20px">
                                 </a>
                             </li>
-                            <li><a href="URL::to('/')"><i class="fa fa-home"></i> Trang chủ <span class="sr-only">(current)</span></a></li>
+                            <li><a href="{{URL::to('/')}}"><i class="fa fa-home"></i> Trang chủ <span class="sr-only">(current)</span></a></li>
                             <li class="dropdown">
                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                     <i class="fa fa-graduation-cap"></i> Thiết kế<span class="caret"></span></a>
                               <ul class="dropdown-menu">
-                                <li><a href="{{URL::to('/introduce')}}">Nội thất văn phòng</a></li>
+                                <li><a href="{{URL::to('/thiet-ke/van-phong')}}">Nội thất văn phòng</a></li>
                                 <li role="separator" class="divider"></li>
-                                <li><a href="#">Nội thất phòng khách</a></li>     
+                                <li><a href="{{URL::to('/thiet-ke/phong-khach')}}">Nội thất phòng khách</a></li>     
                                 <li role="separator" class="divider"></li>
-                                <li><a href="#">Nội thất phòng ăn</a></li>     
+                                <li><a href="{{URL::to('/thiet-ke/phong-an')}}">Nội thất phòng ăn</a></li>     
                                 <li role="separator" class="divider"></li>
-                                <li><a href="#">Nội thất phòng ngủ</a></li>                
+                                <li><a href="{{URL::to('/thiet-ke/phong-ngu')}}">Nội thất phòng ngủ</a></li>                
                               </ul>
                             </li>
-                            <li><a href="URL::to('news')"><i class="fa fa-bullhorn"></i>Hình ảnh thi công</a></li>
+                            
                             <li class="dropdown">
                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                     <i class="fa fa-tasks"></i>Tư vấn<span class="caret"></span></a>
                               <ul class="dropdown-menu">
-                                <li><a href="URL::to('/introduce')">Nội thất văn phòng</a></li>
+                                <li><a href="{{URL::to('/tu-van/noi-that')}}">Tư vấn nội thất</a></li>
                                 <li role="separator" class="divider"></li>
-                                <li><a href="#">Nội thất phòng khách</a></li>     
+                                <li><a href="{{URL::to('/tu-van/kien-truc')}}">Tư vấn kiến trúc</a></li>     
                                 <li role="separator" class="divider"></li>
-                                <li><a href="#">Nội thất phòng ăn</a></li>     
+                                <li><a href="{{URL::to('/tu-van/xay-dung')}}">Tư vấn xây dựng</a></li>     
                                 <li role="separator" class="divider"></li>
-                                <li><a href="#">Nội thất phòng ngủ</a></li>     
+                                <li><a href="{{URL::to('/tu-van/phong-thuy')}}">Tư vấn phong thủy</a></li>     
                               </ul>
                             </li>
-                            <li><a href="URL::to('news')"><i class="fa fa-bullhorn"></i>Bảng giá</a></li>
-                            <li><a href="URL::to('news')"><i class="fa fa-bullhorn"></i>Liên hệ</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="URL::to('/contact')"><i class="fa fa-map-marker"></i>menu[11]</a></li>
+                            <li><a href="{{URL::to('/du-an')}}"><i class="fa fa-bullhorn"></i>Dự án</a></li>
+                            <li><a href="{{URL::to('/tin-tuc')}}"><i class="fa fa-bullhorn"></i>Tin tức</a></li>
+                            <li><a href="URL::to('/bang-gia')"><i class="fa fa-bullhorn"></i>Bảng giá</a></li>
+                            <li role="separator" class="divider"></li>                            
+                            <li><a href="{{URL::to('lien-he')}}"><i class="fa fa-bullhorn"></i>Liên hệ</a></li>
                             </ul>
                          
                         </div><!-- /.navbar-collapse -->

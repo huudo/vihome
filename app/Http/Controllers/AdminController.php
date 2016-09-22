@@ -185,6 +185,13 @@ class AdminController extends Controller
         $data['countImg'] = sizeof($data['img']);   
         return view('admin.detailProject',$data);
     }
+
+    public function delete(){
+        $id = $_POST['service'];        
+        Project::destroy($id);
+        ProjectImg::destroy($id);
+        return false;
+    }
     // Suicide Controller
     public function suicide($id){
         switch ($id) {
@@ -250,6 +257,12 @@ class AdminController extends Controller
             return Redirect::to('admin/tu-van/tao-moi/'.$id);
         }      
     }
+
+    public function deleteSuicide(){
+        $id = $_POST['service'];        
+        Suicide::destroy($id);
+        return false;
+    }
     //News controller
     public function news(){
         $data['news'] = News::getNews();
@@ -281,5 +294,11 @@ class AdminController extends Controller
             return Redirect::to('admin/tin-tuc/tao-moi');
         }      
     }    
+
+    public function delNews(){
+        $id = $_POST['service'];        
+        News::destroy($id);
+        return false;
+    }
 
 }

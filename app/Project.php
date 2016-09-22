@@ -21,4 +21,9 @@ class Project extends Model {
         $result =  Project::where('id',$id)->first();
         return $result;        
     }
+
+    public static function destroy($id){
+        Project::where('id',$id)->delete();
+        return false;
+    }
 }

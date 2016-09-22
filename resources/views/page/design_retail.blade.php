@@ -10,19 +10,15 @@
             <h2>{{$project['tittle']}}</h2>
         </div>
         <div class="wrapper">
-
             <ul id="sb-slider" class="sb-slider">
                 @foreach($images as $item)
-
                     <li>
                         <img src="{{Asset('public/images/uploads')}}/{{$item['url']}}" alt="image1"/>
                         <div class="sb-description">
                             <h3>{{$project['tittle']}}</h3>
                         </div>
                     </li>
-
-                @endforeach
-               
+                @endforeach               
             </ul>
 
             <div id="shadow" class="shadow"></div>

@@ -164,7 +164,6 @@ body {
 .top_content h2{
   color: #fff;
   font-size: 24px;
-  line-height:47px;
 }
 .create_new a{
   float: right;
@@ -186,12 +185,38 @@ body {
   height: 200px;
   position: relative;
 }
-
+.detail_content{
+  margin-bottom: 40px;
+}
 .productList{
   margin-bottom: 10px;
   padding: 10px;
   border-bottom: 2px solid #CCC;
 }
 .detailProduct p{
+  font-size: 16px;
+}
+.center_text{
+  width: 90%;
+  float: left;
+}
+.action_btn{
+  float: right;
+  padding-right: 40px;
+}
+.action_btn a{
+  background: #f9251a;
+  padding: 10px 15px;
+  color: #fff;
+}
+.project_tittle{
+  width: 80%;
+}
+.action_btn a:hover{
+  background: #e71207;
+ 
+}
+.container_center p{
+  color: #0894d8;
   font-size: 16px;
 }

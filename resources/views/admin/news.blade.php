@@ -25,13 +25,45 @@
             </div>                
         </div>
         <div class="detailProduct col-md-9">
-            <h2><a href="">{{$new['tittle']}}</a></h2>
-            <p>
-                <?php
-                    echo str_limit($new['content'], $limit = 500, $end = '...');
-                ?>
-            </p>
+
+            <div class="center_text">
+                <h2><a href="">{{$new['tittle']}}</a></h2>
+                <p>
+                    <?php
+                        echo str_limit($new['content'], $limit = 500, $end = '...');
+                    ?>
+                </p>
+            </div>
+            <div class="action_btn">
+                <a href="{{URL::to('admin/tin-tuc/')}}" class="btn_create" id={{$new['id']}} data-service={{$new['id']}}>Xóa</a>
+            </div>
+            
         </div>
     </div>
+     <script type="text/javascript">
+        $(function() {
+        $('.btn_create').click(function () {
+        var service = $(this).attr('data-service');
+        jQuery.ajax({
+                    crossDomain: false,
+                    url: "deleteNews",
+                    type: "POST",
+                    dataType: "json",
+                    processdata: true,
+                    data: {
+                        "service": service,
+                        '_token': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    success: function() {
+                       console.log(12);
+                    },
+                    error: function (error) {
+                        console.log(error);
+                        //alert("xhr=" + xhr + " b=" + b + " c=" + c);
+                    }
+                });    
+            });
+        });
+    </script>    
     @endforeach
 @stop 

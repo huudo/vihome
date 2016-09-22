@@ -12,9 +12,9 @@
         <form action="{{URL::to('admin/thiet-ke/createNew/')}}/{{$url}}" method="POST" enctype="multipart/form-data">
             <div class="col-md-12">   
                 <p>Tiêu đề</p>
-                <input class="project_tittle" name="tittle">
+                <input class="project_tittle" name="tittle" required>
                 <p>Bài viết</p>
-                <textarea id="editor" class="ckeditor" name="content"></textarea>  
+                <textarea id="editor" class="ckeditor" name="content" required></textarea>  
   
                 <script type="text/javascript">  
                     CKEDITOR.replace( 'editor' );  
@@ -24,7 +24,7 @@
                 @if(Session::has('error'))
                     <p class="errors">{!! Session::get('error') !!}</p>
                 @endif
-                <input type="submit" value="Tạo tin" name="btn_create" class="btn_create" />
+                <input type="submit" value="Tạo tin" name="btn_create" class="btn btn-success" />
                
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
