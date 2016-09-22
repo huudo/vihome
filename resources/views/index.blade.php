@@ -57,28 +57,28 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <a href="#"><img src="//bizweb.dktcdn.net/100/022/286/themes/28873/assets/slide1.jpg?1457574486889" alt="noithatthoinay" style="width: 100%;"></a>
+          <a href="#"><img src="{{Asset('public/images/slide1.jpg')}}" alt="noithatvihome" style="width: 100%;"></a>
         </div>
                 
         <div class="item">
-          <a href="#"><img src="//bizweb.dktcdn.net/100/022/286/themes/28873/assets/slide2.jpg?1457574486889" alt="noithatthoinay" style="width: 100%;"></a>
+          <a href="#"><img src="{{Asset('public/images/slide2.jpg')}}" alt="noithatvihome" style="width: 100%;"></a>
         </div>
                 
                 
         <div class="item">
-          <a href="#"><img src="//bizweb.dktcdn.net/100/022/286/themes/28873/assets/slide3.jpg?1457574486889" alt="noithatthoinay" style="width: 100%;"></a>
+          <a href="#"><img src="{{Asset('public/images/slide3.jpg')}}" alt="noithatvihome" style="width: 100%;"></a>
         </div>
                 
                  
-                
+               
       </div>
       <div class="container">
         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-          <span aria-hidden="true"><img src="//bizweb.dktcdn.net/100/022/286/themes/28873/assets/arrow-left.png?1457574486889" alt=""></span>
+          <span aria-hidden="true"><img src="{{Asset('public/images/arrow_left.png')}}" alt=""></span>
           <span class="sr-only">Previous</span>
         </a>
         <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-          <span aria-hidden="true"><img src="//bizweb.dktcdn.net/100/022/286/themes/28873/assets/arrow-right.png?1457574486889" alt=""></span>
+          <span aria-hidden="true"><img src="{{Asset('public/images/arrow_right.png')}}" alt=""></span>
           <span class="sr-only">Next</span>
         </a>
       </div>
@@ -91,35 +91,35 @@
         <div class=" inner-banner clearfix">
             <div class="col-md-6 col-sm-9 col-xs-12 type-room">
                 <div class="hovereffect">
-                     <img class="img-responsive" src="//bizweb.dktcdn.net/100/022/286/themes/28873/assets/ban1.jpg?1457574486889" alt="">
+                     <img class="img-responsive" src="{{Asset('public/images/ban1.jpg')}}" alt="noi-that-phong-khach">
                         <div class="overlay">
                            
-                           <a class="info" href="#">link here</a>
+                           <a class="info" href="{{URL::to('/thiet-ke/phong-khach')}}">link here</a>
                         </div>
                 </div>
             </div>
             <div class="col-md-2 col-sm-3 hidden-xs type-room">
                 <div class="hovereffect">
-                     <img class="img-responsive" src="//bizweb.dktcdn.net/100/022/286/themes/28873/assets/ban2.jpg?1457574486889" alt="">
+                     <img class="img-responsive" src="{{Asset('public/images/ban2.jpg')}}" alt="noi-that-van-phong">
                      <div class="overlay">                           
-                        <a class="info" href="#">link here</a>
+                        <a class="info" href="{{URL::to('thiet-ke/van-phong')}}">link here</a>
                      </div>
                 </div>
             </div>
             <div class="col-md-2 hidden-sm hidden-xs type-room">
                 <div class="hovereffect">
-                    <img class="img-responsive" src="//bizweb.dktcdn.net/100/022/286/themes/28873/assets/ban3.jpg?1457574486889" alt="">
+                    <img class="img-responsive" src="{{Asset('public/images/ban3.jpg')}}" alt="noi-that-phong-ngu">
                     <div class="overlay">
-                        <a class="info" href="#">link here</a>
+                        <a class="info" href="{{URL::to('thiet-ke/phong-ngu')}}">link here</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-2 hidden-sm hidden-xs type-room">
                 <div class="hovereffect">
-                    <img class="img-responsive" src="//bizweb.dktcdn.net/100/022/286/themes/28873/assets/ban4.jpg?1457574486889" alt="">
+                    <img class="img-responsive" src="{{Asset('public/images/ban4.jpg')}}" alt="noi-that-phong-an">
                     <div class="overlay">
                      
-                       <a class="info" href="#">link here</a>
+                       <a class="info" href="{{URL::to('thiet-ke/phong-an')}}">link here</a>
                     </div>
                 </div>
             </div>

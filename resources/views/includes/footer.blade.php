@@ -33,13 +33,11 @@
 							
 		                       <li><a href='/'>Trang chủ</a></li>
 		                    
-		                       <li><a href='/collections/all'>Sản phẩm</a></li>
+		                       <li><a href='/collections/all'>Giới thiệu</a></li>
 		                    
-		                       <li><a href='/tin-tuc'>Blog</a></li>
+		                       <li><a href='/tin-tuc'>Tin tức</a></li>
 		                    
-		                       <li><a href='/gioi-thieu'>Giới thiệu</a></li>
-		                    
-		                       <li><a href='/ban-do'>Bản đồ</a></li>
+		                       <li><a href='/gioi-thieu'>Liên hệ</a></li>		              		                       
 		                    
 						</ul>                    
 					</div>
@@ -49,17 +47,17 @@
 				<div class="row">
 					<div class="mgb-30 col-md-6 col-sm-6">
 						<div class="foo-title">
-							<span>Hỗ trợ</span>
+							<span>Dịch vụ</span>
 						</div>
 						<ul class="list-unstyled foo-content">
 							
-		                       <li><a href='/'>Hướng dẫn mua hàng</a></li>
+		                       <li><a href='/'>Thiết kế phòng khách</a></li>
 		                    
-		                       <li><a href='/'>Hướng dẫn đổi trả</a></li>
+		                       <li><a href='/'>Thiết kế văn phòng</a></li>
 		                    
-		                       <li><a href='/'>Chính sách giao hàng</a></li>
+		                       <li><a href='/'>Thiết kế phòng ăn</a></li>
 		                    
-		                       <li><a href='/'>Chính sách bảo mật</a></li>
+		                       <li><a href='/'>Thiết kế phòng ngủ</a></li>
 		                    
 						</ul>
 					</div>
