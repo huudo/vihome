@@ -36,7 +36,13 @@ class HomeController extends Controller
         $data['icon'] = "noithat.png";
         return view('page.project',$data);
     }
-
+    public function project_retail($id){
+        $data['tittle'] = "Dự án thi công";
+        $data['project'] = Project::getProjectDetail($id);
+        $data['images'] = ProjectImg::getFirstImg($id);       
+        $data['icon'] = "noithat.png";
+        return view('page.design_retail',$data);
+    }
     public function design($name){
          switch ($name) {
             case 'van-phong':
